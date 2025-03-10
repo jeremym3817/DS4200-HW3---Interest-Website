@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Marino - CVP Application Queue</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<button class="tablink" onclick="openTab('Home', this)" id="defaultOpen">Home</button>
+<script>
+    window.onload = function() {
+    document.getElementById("defaultOpen").click();
+    };
+</script>
+
+<button class="tablink" onclick="openTab('How_to_Use', this)">How to Use</button>
+
+<div class="content">
+
+    <div id="Home" class="tabcontent">
+        <h1>CVP Application Queue</h1>
+        <h4>Developed by Jeremy Marino</h4>
+        <h5>jeremym3817@gmail.com | https://www.linkedin.com/in/jeremygmarino/</h5>
+        <p>I am Jeremy Marino, a 2nd Year Computer Science undergraduate with a concentration in Artificial Intelligence at Northeastern University. This is a page dedicated to my web application I created for Northeastern's Community Volunteer Program. I created this app to streamline the process of assigning program applicants to our community partners through a queue. This involves fetching, cleaning, manipulating, and presenting the data in a way that is easily digestible. I developed this project in Python (pandas for data management, streamlit for presentation) and VSCode.</p>
+    
+        <p>Originally, the review of applicants involved manually parsing each data entry in a massive csv file, taking about a week to decide on. This takes so long because of the varied type of user inputs and the large number of fields that needed to be filter if they are not relevant to a particular applicant. This process will put each applicant in a queue, allowing the user to quickly look at that important information and make a decision. I am planning on piloting this app during our next semester that usually has a smaller pool of applicants to test it's functionality and iron out any bugs. My goal is for this app to be functional for future semesters and be self-sustaining to be used after I am no long with the program.</p>
+    
+        <img src="\CVP_APP_SS.png", width="1000">
+    </div>
+    
+    <div id="How_to_Use" class="tabcontent">
+        <h1>How to Use the CVP Application</h1>
+    
+        <p>I kept the design and interface simple in order to make sure anyone can use the application without any guidance or confusion. Each applicant has three tabs with their most relevant information for deciding their position. The next two tabs will be their first and second options for preferred sites. They will have varying fields depending on what each site requires (for example, many childcare sites require CORI and SORI background checks that require a student's ID).</p>
+    
+        <p>The most relevant information, the text fields that allows an applicant to describe why they want to serve at their site and if they need any accommodations, are highlighted for ease of use. However, if the reviewer needs more in-depth info about the candidate, they can look at the data sheet that is presented above said text.</p>
+    
+        <img src="\CVP_APP_SS2.png">
+    
+        <p>There are also some hot keys that can give the reviewer shortcuts when needed:</p>
+    
+        <ul>
+            <li>Up Arrow and Down Arrow takes you to the previous/next applicant respectively</li>
+            <li>Left Arrow and Right Arrow takes you between tabs on an applicant's response (after an initial click)</li>
+            <li>Use the Input Index field below to jump to a particular applicant's index</li>
+        </ul>
+    
+        <p>As I continue to develop this project, I plan on refining the filtering process to prioritize more qualified applicants in the queue first and allow a user to input their own csv file so I don't have to swap them out in the code myself. While there are some improvements to be made, this is a good starting point for making this process less pain staking.</p>
+    
+    
+    </div>
+</div>
+</html> 
+
